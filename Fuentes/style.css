@@ -38,7 +38,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 1% 10%;
     background-image: linear-gradient(130deg,#050819, #000b38 );
     display: flex;
     justify-content: space-between;
@@ -111,15 +111,19 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 70px 10% 0;
     
+    
 }
 
 .home-content{
-    max-width: 800px;
+    max-width: 100%;
+
+}
+.home .home-content p{
+    width: 85%;
 
 }
 
@@ -164,10 +168,17 @@ body{
     animation-delay: 1s;
 }
 
+.home-image {
+    width: 80%;
+    align-items: center;
+    z-index: 500;
+}
+
+
 
 .home-image img{
-    
-    max-width: 600px;
+    align-items: center;
+    max-width: 100%;
     margin-right: -20px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
@@ -341,16 +352,25 @@ body{
     background-image: linear-gradient(130deg,#014db1,#0c1761,#0d1546,#0b1138 , #0b1138 ,#090d2a );
     color: #fff;
     padding: 120px 10% 0;
-    padding-left: 150px;
     padding-bottom: 150px;
+    display: flex;
     
     
 } 
+
+.about2{
+    width: 100%;
+}
 
 .about-img img{ 
     width: 45vw;
     margin-top: 60px;
 
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
 }
 
 .heading {
@@ -367,6 +387,8 @@ body{
 
 .about-content h3 {
     font-size: 2rem;
+    text-align: left;
+
     
 
 }
@@ -589,7 +611,7 @@ body{
 }
 
 .juegos-container {
-    margin-top: -400px;
+    margin-top: -8%;
 }
 
 /* Contacto Edit*/
@@ -697,6 +719,17 @@ body{
 }
 
 /* RESPONSIVE*/
+
+@media (max-width: 1477px) {
+
+    
+
+.juegos .juegos-container .juegos-box .juegos-layer p{
+    display: none;
+    }
+
+}
+
 @media (max-width: 1325px) {
 
     .about-img img{
@@ -717,7 +750,7 @@ body{
     .home-image{
             
         margin-right: 20px;
-        scale: 70%;
+        
         margin-left: -80px;
 
     
@@ -726,11 +759,15 @@ body{
         font-size: 16px;
     }
     
+.juegos .juegos-container .juegos-box .juegos-layer p{
+    display: none;
+}
 
-.juegos-container {
-    margin-top: -100px;
+.juegos .juegos-container .juegos-box  .btn1 {
+    margin-top: 7%;
 
 }
+
 .version-container p{
     font-size: 15px;
 }
@@ -743,6 +780,22 @@ body{
     padding-bottom: -100px;
 }
 
+@media (max-width: 1046px) {
+
+    .about{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+        }
+
+    .about .about-content p{
+        width: 100%;
+        
+    }    
+    
+    }
 
 @media (max-width: 991px) {
     .header{
@@ -825,6 +878,10 @@ body{
     scale: 50%;
     margin-left: -160px;
 }
+
+.juegos-layer h4{
+    font-size: 30px;
+}
 }
 
 
@@ -837,7 +894,7 @@ body{
 
 
 
-.navbar{
+.navbar {
     position: absolute;
     top:100%;
     left: 0;
@@ -850,10 +907,11 @@ body{
 
 }
 
-.navbar .active {
-    display: block;
-}
 
+.active {
+    display: block;
+    
+}
 
 
 .navbar a{
@@ -899,7 +957,7 @@ body{
 
 .about img{
     width: 70vw;
-    margin-top: 6rem;
+    
 }
 
 .version h2{
@@ -914,6 +972,11 @@ body{
     margin-bottom: 3rem;
     margin-top: -3rem;
 }
+.juegos-layer h4{
+    font-size: 50px;
+}
+
+
 
 .juegos-container{
     grid-template-columns: repeat(2,1fr);
